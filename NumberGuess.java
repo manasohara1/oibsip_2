@@ -17,7 +17,7 @@ import java.awt.event.*;
 class MyNumber implements ActionListener
 {
 	//range to generate random numbers
-	final int iMax_range = 1000;
+	final int iMax_range = 100;
 	final int iMin_range = 1;
 	final int iRange = iMax_range - iMin_range + 1;
 	protected int iRandomGeneratedNum = 0;
@@ -25,7 +25,7 @@ class MyNumber implements ActionListener
 	//GUI Components
 	JFrame frame = new JFrame("Number Guessing Game by Manas Ohara");
 	JTextField t1 = new JTextField();
-	JLabel label = new JLabel("Enter number between 1 to 1000: ");
+	JLabel label = new JLabel("Enter number between 1 to 100: ");
         JButton b1 = new JButton("Guess!!");
 
 	////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ class MyNumber implements ActionListener
 		if(e.getSource()==b1)
 		{  
 			//Number Validation
-		    if( ( iNum <= 0 ) || ( iNum > 1000 ) )
+		    if( ( iNum <= 0 ) || ( iNum > 100 ) )
 		    {
 			System.out.println("Enter number in given range\n");
 			return;
